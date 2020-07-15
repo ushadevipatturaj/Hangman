@@ -11,12 +11,11 @@ fail_counter = 1
 
 while fail_counter <= 8 and guessword != computer_choice:
     print('\n{}'.format(guessword))
-    user_choice = input("Input a letter: ")
+    user_choice = input("Input a letter:")
     guessword_temp = ''
-    if (user_choice in fail_case) or (user_choice not in fail_case and user_choice in temp):
+    if user_choice in computer_choice and user_choice in temp:
         print('No improvements')
         fail_counter += 1
-        fail_case.add(user_choice)
         continue
     elif user_choice not in computer_choice:
         print('No such letter in the word')

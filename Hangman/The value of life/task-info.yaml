@@ -232,5 +232,55 @@ files:
         CoffeeMachineTest('hangman.hangman').run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/projects/69/stages/377/implement
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #2
+
+    Before: ----
+    Letter: y
+    After : ----
+
+    There is no "No such letter in the word" message, but should be
+
+    Please find below the output of your program during this failed test.
+    Note that the '>' character indicates the beginning of the input line.
+
+    ---
+
+    H A N G M A N
+
+    ----
+    Input a letter: > p
+    No such letter in the word
+
+    ----
+    Input a letter: > r
+    No such letter in the word
+
+    ----
+    Input a letter: > e
+    No such letter in the word
+
+    ----
+    Input a letter: > y
+    No such letter in the word
+
+    ----
+    Input a letter: > s
+    No such letter in the word
+
+    ----
+    Input a letter: > t
+    No such letter in the word
+
+    ----
+    Input a letter: > y
+    No improvements
+
+    ----
+    Input a letter: > r
+    No improvements
+    You are hanged!
+  time: Wed, 15 Jul 2020 17:41:35 UTC
 record: -1
